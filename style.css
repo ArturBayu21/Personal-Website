@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: 'Heebo', sans-serif;
+}
+
+.landing {
+    min-height: 100vh;
+    background-image: url(images/pic-2.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 0rem 5rem;
+}
+
+
+.big-text {
+    position: absolute;
+    top: 45%;
+    left: 16%;
+    font-weight: lighter;
+    font-size: 3rem;
+}
+
+.landing-desc {
+    max-width: 40%;
+    position: absolute;
+    top: 35%;
+    left: 16%;
+}
+
+.landing-desc h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.landing-desc p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.intro {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Heebo', sans-serif;
+    font-size: 5rem;
+}
+
+.slider {
+    background: rgb(44, 44, 44);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.hide {
+    background: black;
+    overflow: hidden;
+}
+
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+.projects {
+    min-height: 100vh;
+    background-color: white;
+    padding-bottom: 100px;
+}
+
+.projects h1 {
+    text-align: center;
+    font-size: 3.7rem;
+    padding: 6.5rem 0 4rem 0;
+}
+
+.card_project_holder {
+    margin: 30px 0;
+}
+
+.card-header {
+    padding: 17px 20px;
+    font-size: 1.7rem;
+}
+
+.my-column {
+    padding: 0 27px;
+}
+
+.my-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.my-footer {
+    height: 20vh;
+    background-color: black;
+}
+
+.project-note {
+    padding: 30px 20px 0 20px;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.social-media-img {
+    height: 50px;
+    margin: 12px;
+}
+
+.my-footer h4 {
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.my-footer a {
+    text-decoration: none;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    padding-top: 22px;
+}
+
+.my-nav-wrapper {
+    justify-content: end;
+}
+
+.nav-item {
+    padding-left: 5rem;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    color: white;
+    text-align: end;
+}
+
+.navbar-brand {
+    font-family: 'Lobster', cursive;
+    font-size: 2.2rem;
+}
+
+@media (max-width:1073px) {
+    .landing-desc {
+        top: 30%;
+    }
+}
+
+@media (max-width:686px) {
+    .landing-desc {
+        top: 25%;
+        max-width: 70%;
+    }
+}
+
+@media (max-width:432px) {
+    .nav-link {
+        text-align: start;
+    }
+}

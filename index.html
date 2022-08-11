@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artur's Personal Website</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700&family=Lobster&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- custome css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <section class="landing" id="home">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Artur Bayu</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse my-nav-wrapper" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+            <div class="landing-desc">
+                <h1>I'm Artur Bayu.</h1>
+                <p>This page will show how far i have progressed in technology world. I have a strong interest in Machine learning Engineering, that's why below you'll see a bunch of algorithms and some games that i have made.</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="container-xl">
+        <section class="projects" id="projects">
+            <h1>My Projects</h1>
+            <p class="project-note">To run the project below, you'll need to download the repository first, unzip it, then open and run it on your code editor.</p>
+
+            <div class="row">
+                <!-- column 1 -->
+                <div class="col-lg my-column">
+                    <div class="card border-dark card_project_holder">
+                        <h4 class="card-header">BlackJack Game</h4>
+                        <div class="card-body">
+                          <h5 class="card-title">This program allows users and computers to play Blackjack cards</h5>
+                          <p class="card-text">Once you run the program, it will ask you whether you want to play the game or not. if you type yes, the program will generate 2 random cards for you and 2 random cards for the computer. You can see your own card, calculate the value by yourself and get another card if you want. The computer has it's own algorithm to get another card. You only can see one of the computer's card, not all. if you decided to not get another card, the program will compare your card's value, with the computer value. The rules is pretty much the same with the black jack game in general.</p>
+                          <a href="https://github.com/ArturBayu21/Blackjack-Game" target="_blank" class="btn btn-dark my-button">Get Repository</a>
+                          <a href="project_page/blackjack.html" target="_blank" class="btn btn-outline-dark">See Flowchart</a>
+                        </div>
+                      </div>
+                      <div class="card border-dark card_project_holder">
+                        <h4 class="card-header">Coffee Machine Algo</h4>
+                        <div class="card-body">
+                          <h5 class="card-title">This program is a virtual version of a coffee machine, where user can get certain coffee by inserting their coins</h5>
+                          <p class="card-text">This is the first program that i write with Object Oriented Programming (OOP). Once you run it, the computer will prompt you tu choose one of the menu such as latte, cappuccino and espresso. After you pick one of them, the program will prompt you to insert the coins you have. Once you insert your coins, the computer will calculate your coins and do a transaction validation process. If your coin is enough or more, the computer will check the machine resources to make the coffee, and if its enough, you will get the coffee and the change. If your coins are not enough, the computer will refund it. You can check the machine resources by typing 'report' or shutdown the machine by typing 'off'.</p>
+                          <a href="https://github.com/ArturBayu21/Virtual-Coffee-Machine" target="_blank" class="btn btn-dark my-button">Get Repository</a>
+                          <a href="project_page/coffee_machine.html" target="_blank" class="btn btn-outline-dark">See Flowchart</a>
+                        </div>
+                      </div>
+                    <div class="card border-dark card_project_holder">
+                        <h4 class="card-header">Hanging Man Game</h4>
+                        <div class="card-body">
+                          <h5 class="card-title">This program allows the user to play hanging man with the computer</h5>
+                          <p class="card-text">This hanging man game is pretty much the same with hanging man game in general. When you run the program, it will pick a random word from the hanging_man file which contains houndreds of words. The word that the computer choose will converted into a blank spaces (e.g car converted ted to '_ _ _' ) and the user have to guess each word. If the user guess is wrong, their hanging man vigure will start to be drawn. If their vigure is drawn compleatly, the user will lose.</p>
+                          <a href="https://github.com/ArturBayu21/Hanging-Man-Game" target="_blank" class="btn btn-dark my-button">Get Repository</a>
+                          <a href="project_page/hangingman.html" target="_blank" class="btn btn-outline-dark">See Flowchart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <!-- column 2 -->
+                <div class="col-lg my-column">
+                    <div class="card border-dark card_project_holder">
+                        <h4 class="card-header">Higher Lower Game</h4>
+                        <div class="card-body">
+                          <h5 class="card-title">This program compares the popularity of 2 subjects such as celebrities, and asks the user to guess</h5>
+                          <p class="card-text">Once you run the program, it will choose 2 random subjects from the game data folder. Those 2 random subject will be compared by the computer, and the computer will ask you as the user to pick which one is more popular (has more instagram follower) from booth of the subject. If you guess it right, you get one score, and the computer continue comparing the subject that you guess with another subject that the computer pick randommly. Other wise, if you guess it wrong, you will get an output that says game over, and the program ends.</p>
+                          <a href="https://github.com/ArturBayu21/HigherLower-Game" target="_blank" class="btn btn-dark my-button">Get Repository</a>
+                          <a href="project_page/higher_lowe.html" target="_blank" class="btn btn-outline-dark">See Flowchart</a>
+                        </div>
+                      </div>
+                      <div class="card border-dark card_project_holder">
+                        <h4 class="card-header">Secret Auction Algo</h4>
+                        <div class="card-body">
+                          <h5 class="card-title">Allows users to bid in turns without being noticed, and will choose the user with the largest bid</h5>
+                          <p class="card-text">This program is suitable for bidding on something with friends and requires a laptop that will be used in turns. When you run this program, it will ask your name, your bid amount, and is there anyone who will bid after you? if so, your previous input will be hidden, and you can give the laptop to the next person. If there are no more people, the program will choose the one person with the highest bid.</p>
+                          <a href="https://github.com/ArturBayu21/Secret-Auction" target="_blank" class="btn btn-dark my-button">Get Repository</a>
+                          <a href="project_page/secret_auction.html" target="_blank" class="btn btn-outline-dark">See Flowchart</a>
+                        </div>
+                      </div>
+                    <div class="card border-dark card_project_holder">
+                        <h4 class="card-header">Number Guessing Game</h4>
+                        <div class="card-body">
+                          <h5 class="card-title">The computer will generate lives, and the user must guess the number based on the clue given by the computer</h5>
+                          <p class="card-text">The game is quet simple. The first time you run the program, it will ask you tu choose a difficulty, the option is easy or hard. If you choose easy, you will het 10 attemps to guess. Otherwise if you choose hard, you will get 5 times attemps to guess. After that, the computer will pick a random number from 1 to 100 for you to guess. Each time you guess a wrong number, you will get a hint from the computer, whether your number is too high or too low. If you run out of attemp, you will lose.</p>
+                          <a href="https://github.com/ArturBayu21/Number-Guessing-Game" target="_blank" class="btn btn-dark my-button">Get Repository</a>
+                          <a href="project_page/number_guessing.html" target="_blank" class="btn btn-outline-dark">See Flowchart</a>
+                        </div>
+                      </div>
+                </div>
+
+              </div>
+        </section>
+    </div>
+
+    <section class="my-footer" id="footer">
+      <h4>Social Media</h4>
+      <div class="icon-container">
+        <div>
+          <a href="mailto:arturbayuaji2003@gmail.com">
+            <img class="social-media-img email" src="images/gmail (1).png" alt="">
+          </a>
+          <a href="https://www.facebook.com/artur.bayu.7/" target="_blank">
+            <img class="social-media-img" src="images/facebook (3).png" alt="">
+          </a>
+          <a href="https://www.instagram.com/artur.bayu/" target="_blank">
+            <img class="social-media-img" src="images/instagram (3).png" alt="">
+          </a>
+          <a href="https://www.youtube.com/channel/UCArzdDwuaZKtMLRh1fUauVg" target="_blank">
+            <img class="social-media-img" src="images/youtube (2).png" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="intro">
+        <div class="intro-text">
+            <h1 class="hide"><span class="text">Beautiful Mind</span></h1>
+            <h1 class="hide"><span class="text">Combined with Technology</span></h1>
+            <h1 class="hide"><span class="text">Create a Masterpiece.</span></h1>
+        </div>
+    </div>
+
+
+    <div class="slider"></div>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <!-- my custome js -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>
